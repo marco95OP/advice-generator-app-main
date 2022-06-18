@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary colors */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    /* Neutral colors */
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    /* Font */
+    --manrope-800: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: var(--manrope-800);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    margin-top: 200px;
+    max-width: 540px;
+    height: 300px;
+    border: 1px solid red;
+    text-align: center;
+    color: var(--neon-green);
+    border-radius: 10px;
+    background-color: var(--dark-grayish-blue);
+}
+
+.wrapper .advice-title {
+    margin: 30px;
+}
+
+.wrapper h3 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.wrapper .advice-text {
+    color: var(--light-cyan);
+    margin: 20px;
+    font-size: 26px;
+}
+
+
+.wrapper hr {
+    border-color: var(--grayish-blue);
+}
+
+.advice-button {
+    position: absolute;
+    left: 50%;
+    bottom: 58%;
+    border: none;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    padding: 15px;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.advice-button img {
+    width: 100%;
+}
+
+.advice-button:hover {
+    box-shadow: 0 0 20px 3px #52ffa8;
+}
